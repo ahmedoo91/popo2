@@ -1,28 +1,27 @@
-public class PokemonEau extends Pokemon{
+public class PokemonEau extends Pokemon {
 
-    public Pokemon PokemonEau;
-    public Pokemon Pokemon;
 
-    public PokemonEau(String nom, int hp, int atk){
-        super (nom,hp,atk);
 
+    public PokemonEau(String nom, int hp, int atk) {
+        super(nom, hp, atk);
     }
 
     @Override
-    public void attacker (Pokemon p) {
-        if (p == PokemonEau) {
-            p.hp = atk * 2 - p.hp;
-        } else
-            p.hp = (int) (atk * 0.5 - p.hp);
-        if (p == Pokemon) {
-            p.hp= atk - p.hp;
+    public void attacker(Pokemon p) {
+        if (p = PokemonFeu) {
+
+            p.hp = this.atk * 2 - p.hp;
+
         }
+        else if (p = PokemonPlante) {
+
+            p.hp = this.atk * 0.5 - p.hp;
+        }
+        else
+            p.hp = this.atk - p.hp;
+
+
 
     }
 
-
-
-
-
-}
 }
